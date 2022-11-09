@@ -90,13 +90,13 @@ header{
 
 /* business plan */
 
-.row-business{
+.row-business-plan{
     display: flex;
     gap: 50px;
     margin-bottom: 50px;
 }
 
-.col-business{
+.col-business-plan{
     height: 800px;
     flex-basis: calc(100% /3);
 
@@ -130,6 +130,10 @@ header{
 
 /* partner dropbox */
 
+.partner-dropbox{
+    margin-bottom: 100px;
+}
+
 .medium-col{
     height: 500px;
 }
@@ -140,5 +144,57 @@ header{
 
 .partner-small-col{
     flex-basis: 40%;
+    
+}
+
+/* dropbox business */
+
+.dropbox-business{
+    height: 800px;
+    margin-bottom: 150px;
+   
+}
+
+.dropbox-business-row{
+   display: flex;
+   flex-wrap: wrap; 
+   gap: 30px;
+}
+
+
+.dropbox-business-col{
+ flex-basis: calc(100% / 3 - 20px);
+ height: 360px;
+}
+
+/* text */
+
+.team{
+    width: 30%;
+    margin-bottom: 50px;
+    
+}
+
+/* SPONSOR */
+
+.container-sponsor{
+    display: flex;
+
+    height: 400px;
+}
+
+.sponsor-col{
+    flex-basis:calc(100% /3);
+ 
+}
+
+.in-col-sponsor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sponsor-card{
+    flex-basis: 50%;
+    height: 200px;
     
 }
