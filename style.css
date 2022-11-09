@@ -1,0 +1,59 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+
+
+/* GENERICS */
+.container-large{
+    max-width: 1300px;
+    margin: auto;
+    background-color: blue;
+    height: 800px;
+}
+
+h1{
+    font-size: 70px;
+}
+
+
+/* UTILITIES */
+
+.bg-color {
+    background-color: #B4D0E7;
+
+}
+
+/* HEADER */
+header{
+    background-color: white;
+    height: 100px;
+   
+}
+
+
+/* JUMBOTRON */
+
+.jumbo-col{
+    display: flex;
+
+
+}
+
+.small-col{
+    flex-basis: 30%;
+    background-color: red;
+    height: 500px;
+
+}
+
+.large-col{
+    flex-basis: 70%;
+    background-color: orange;
+    height: 500px;
+}
