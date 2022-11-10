@@ -29,8 +29,17 @@
 
 }
 
-.border{
+.border-dashed{
     border: 1px dashed black;
+}
+
+.border{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    
+}
+
+.border-bottom{
+    border-bottom: 1px solid rgba(0, 0, 0,0.2);
 }
 
 .mb-10{
@@ -49,6 +58,14 @@
 
 .mb-45{
     margin-bottom: 45px;
+}
+
+.mb-200{
+    margin-bottom: 200px;
+}
+
+.pd-45{
+    padding-top: 45px;
 }
 
 
@@ -100,6 +117,7 @@ li a{
 p{
     line-height: 22px;
     font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .btn{
@@ -132,6 +150,15 @@ p{
     line-height: 40px;
 }
 
+.button-transparent{
+    width: 150px;
+    height: 40px;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 40px;
+}
+
 .short-hr{
     width: 20%;
 }
@@ -139,6 +166,7 @@ p{
 .blue-color{
    color: #0061FF; 
 }
+
 
 
 /* HEADER */
@@ -234,17 +262,20 @@ header{
 /* personalized plan */
 
 .personalized-plan{
-    height: 200px;
+    height: 260px;
     margin-bottom: 80px;
 }
 
 
 .full-col{
     height: calc(100% - 40px);
+    
 }
 
 .personalized-large-col{
-    flex-basis: 70%;
+    flex-basis: 70%; 
+    padding-top: 35px;
+    padding-left: 30px;  
 }
 
 
@@ -252,14 +283,20 @@ header{
     flex-basis: 30%;
 }
 
+.contatta-ufficio-vendite{
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+
 /* partner dropbox */
 
 .partner-dropbox{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .medium-col{
-    height: 500px;
+    gap: 50px;
 }
 
 .partner-large-col{
@@ -267,16 +304,14 @@ header{
 }
 
 .partner-small-col{
-    flex-basis: 40%;
-    
+    flex-basis: 40%; 
 }
 
 /* dropbox business */
 
 .dropbox-business{
-    height: 800px;
-    margin-bottom: 150px;
-   
+    height: 100%;
+    margin-bottom:  200px;
 }
 
 .dropbox-business-row{
@@ -287,16 +322,11 @@ header{
 
 
 .dropbox-business-col{
- flex-basis: calc(100% / 3);
- height: 360px;
+ flex-basis: calc(100%/3 - 20px);
+ height: 500px;
 }
 
-/* text */
 
-.team{
-    margin-bottom: 50px;
-    
-}
 
 /* SPONSOR */
 
