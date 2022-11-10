@@ -169,6 +169,7 @@ p{
 
 
 
+
 /* HEADER */
 header{
     background-color: white;
@@ -344,10 +345,58 @@ header{
 .in-col-sponsor{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .sponsor-card{
     flex-basis: 50%;
     height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     
+}
+
+.sponsor-card img{
+    display: flex;
+    width: 150px;
+    margin: auto;
+    color: white;
+
+}
+
+/* BG-COLOR */
+
+.bg-lighgreen{
+    background-color: #A2D39B;
+}
+
+.bg-bordeaux{
+    background-color: #61082B;
+}
+
+.bg-lightblue{
+    background-color: #0093CE;
+}
+
+.bg-orange{
+    background-color: #FF1C1C;
+}
+
+.bg-red{
+    background-color: #D5001F;
+}
+
+.bg-celeste{
+    background-color: #B4D0E7;
+}
+
+.bg-dark-blue{
+    background-color: #0D2481;
+}
+
+.bg-yellow{
+    background-color: #FFD830;
 }
