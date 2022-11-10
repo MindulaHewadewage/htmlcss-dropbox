@@ -13,25 +13,12 @@
 .container-large{
     max-width: 1200px;
     margin: auto;
-    background-color: blue;
-    height: 800px;
 }
 
 .container-small{
     max-width: 1000px;
     margin: auto;
-    border;
     height: 100%;
-}
-
-h1.title{
-    font-size: 70px;
-    margin-bottom:30px ;
-}
-
-h2{
-    font-size: 40px;
-    margin: 40px 0;
 }
 
 
@@ -46,49 +33,162 @@ h2{
     border: 1px dashed black;
 }
 
-.mini-header{
-    height: 40px;
+.mb-10{
+    margin-bottom: 10px;
 }
 
+
+.mb-15{
+    margin-bottom: 15px;
+}
+
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mb-45{
+    margin-bottom: 45px;
+}
+
+
+.opacity{
+    opacity: 0.5;
+}
 
 .flex{
     display: flex;
 }
+
+img{
+    display: block;
+    max-width: 100% ;
+}
+
+h1.title{
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom:60px ;
+}
+
+h2{
+    font-size: 40px;
+    margin: 40px 0;
+}
+
+h3{
+    font-size: 25px;
+}
+
+ul li{
+    list-style-type: none;
+    display: flex;
+    padding: 20px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+p{
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.btn-small{
+    padding:5px 15px;
+}
+
+.btn-blue{
+    background-color: #0061FF;
+    color: white;
+}
+
+
+.mini-header{
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.button-blue{
+    width: 240px;
+    height: 40px;
+    background-color: #0061FF;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+.short-hr{
+    width: 20%;
+}
+
+.blue-color{
+   color: #0061FF; 
+}
+
 
 /* HEADER */
 header{
     background-color: white;
     height: 100px;
 
-    
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
    
 }
 
 
 /* JUMBOTRON */
 
+.jumbotron{
+    height: 750px;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+
 .jumbo-col{
     display: flex;
-
-
 }
 
 .jumbo-small-col{
     flex-basis: 30%;
-    background-color: red;
     height: 500px;
 
 }
 
 .jumbo-large-col{
     flex-basis: 70%;
-    background-color: orange;
     height: 500px;
 }
 
 /* MAIN */
 
 /* business plan */
+
+.business-plan{
+    margin-top: 200px;
+}
 
 .row-business-plan{
     display: flex;
@@ -97,14 +197,38 @@ header{
 }
 
 .col-business-plan{
-    height: 800px;
+    height: 950px;
     flex-basis: calc(100% /3);
 
 }
 
-.fatturazione{
-    margin-bottom: 40px;
+.button{
+    display: flex;
+    margin-right: 50px;
+    margin-bottom: 60px;
+
 }
+
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: block;
+    margin-right:10px ;
+}
+
+.circle.done{
+    border: 5px solid  #0061FF;
+}
+
+.descrizione-prodotto{
+    width: 80%;
+    margin: auto;
+}
+
+
 
 
 /* personalized plan */
@@ -163,14 +287,13 @@ header{
 
 
 .dropbox-business-col{
- flex-basis: calc(100% / 3 - 20px);
+ flex-basis: calc(100% / 3);
  height: 360px;
 }
 
 /* text */
 
 .team{
-    width: 30%;
     margin-bottom: 50px;
     
 }
@@ -180,7 +303,7 @@ header{
 .container-sponsor{
     display: flex;
 
-    height: 400px;
+    height: 600px;
 }
 
 .sponsor-col{
@@ -195,6 +318,6 @@ header{
 
 .sponsor-card{
     flex-basis: 50%;
-    height: 200px;
+    height: 300px;
     
 }
