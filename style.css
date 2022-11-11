@@ -22,12 +22,55 @@
 }
 
 
-/* UTILITIES */
 
-.bg-color.celeste {
+/* BG-COLOR */
+.bg-light-green{
+    background-color:#A2D39B ;
+}
+
+.bg-bordeaux{
+    background-color: #61082B;
+}
+
+.bg-lightblue{
+    background-color: #0093CE;
+}
+
+.bg-orange{
+    background-color: #FF1C1C;
+}
+
+.bg-red{
+    background-color: #D5001F;
+}
+
+.bg-celeste{
+    background-color: #B4D0E7;
+}
+
+.bg-dark-blue{
+    background-color: #0D2481;
+}
+
+.bg-yellow{
+    background-color: #FFD830;
+}
+
+.bg-celeste {
     background-color: #B4D0E7;
 
 }
+
+/* COLORS */
+.magenta{
+    color:#61082B;
+}
+
+
+
+
+/* UTILITIES */
+
 
 .border-dashed{
     border: 1px dashed black;
@@ -58,6 +101,10 @@
 
 .mb-45{
     margin-bottom: 45px;
+}
+
+.mb-60{
+    margin-bottom: 60px;
 }
 
 .mb-200{
@@ -159,6 +206,14 @@ p{
     line-height: 40px;
 }
 
+.button-white{
+    width: 280px;
+    height: 50px;
+    background-color: white;    
+    text-align: center;
+    line-height: 50px;
+}
+
 .short-hr{
     width: 20%;
 }
@@ -257,6 +312,14 @@ header{
     margin: auto;
 }
 
+.check{
+    display: flex;
+}
+
+.fa-check{
+    padding-right: 5px;
+}
+
 
 
 
@@ -333,7 +396,6 @@ header{
 
 .container-sponsor{
     display: flex;
-
     height: 600px;
 }
 
@@ -345,7 +407,7 @@ header{
 .in-col-sponsor{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+
 }
 
 .sponsor-card{
@@ -355,48 +417,60 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+
     
 }
 
 .sponsor-card img{
     display: flex;
-    width: 150px;
+    width: 50%;
     margin: auto;
-    color: white;
+    filter: invert(1);
 
 }
 
-/* BG-COLOR */
-
-.bg-lighgreen{
-    background-color: #A2D39B;
+.description{
+    padding: 50px;
+    background-color: #F5F5F5;
+    height: 100%;
 }
 
-.bg-bordeaux{
-    background-color: #61082B;
+.description img{
+    width: 50%;
+
 }
 
-.bg-lightblue{
-    background-color: #0093CE;
+
+/* FREE TRIAL */
+
+.free-trial{
+    height: 300px;
+    margin-bottom: 150px;
 }
 
-.bg-orange{
-    background-color: #FF1C1C;
+
+.left-col-free-trial{
+    flex-basis: 50%;
+    padding-top: 80px;
 }
 
-.bg-red{
-    background-color: #D5001F;
+.right-col-free-trial{
+    padding: 120px;
+    flex-basis: 30%;
+   
 }
 
-.bg-celeste{
-    background-color: #B4D0E7;
+/* Questions */
+
+.question-box{
+    display: flex;
+    justify-content: space-between;
+    padding:40px 0;
+    border-top: 1px solid black;
+    
 }
 
-.bg-dark-blue{
-    background-color: #0D2481;
-}
-
-.bg-yellow{
-    background-color: #FFD830;
+.question{
+    display: flex;
+    align-content: center;
 }
