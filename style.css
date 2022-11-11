@@ -7,8 +7,6 @@
 
 }
 
-
-
 /* GENERICS */
 .container-large{
     max-width: 1200px;
@@ -20,8 +18,6 @@
     margin: auto;
     height: 100%;
 }
-
-
 
 /* BG-COLOR */
 .bg-light-green{
@@ -66,24 +62,16 @@
     color:#61082B;
 }
 
-
-
-
-/* UTILITIES */
-
-
-.border-dashed{
-    border: 1px dashed black;
+.white{
+    color: white;
 }
 
-.border{
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    
-}
+.blue{
+    color: #0061FF; 
+ }
+ 
 
-.border-bottom{
-    border-bottom: 1px solid rgba(0, 0, 0,0.2);
-}
+/* MARGINS */
 
 .mb-10{
     margin-bottom: 10px;
@@ -107,69 +95,66 @@
     margin-bottom: 60px;
 }
 
+.mb-150{
+    margin-bottom: 150px;
+}
+
 .mb-200{
     margin-bottom: 200px;
 }
+
+
+/* PADDING */
 
 .pd-45{
     padding-top: 45px;
 }
 
-
-.opacity{
-    opacity: 0.5;
+.pd-30-right{
+    padding-right: 30px;
 }
 
-.flex{
-    display: flex;
+
+
+.pd-5-right{
+    padding-right: 5px;
 }
 
-img{
-    display: block;
-    max-width: 100% ;
+.pd-10-right{
+    padding-right: 10px;
 }
 
-h1.title{
-    font-size: 70px;
-    font-weight: 800;
-    margin-bottom:60px ;
+.pd-10-left{
+    padding-left: 10px;
 }
 
-h2{
-    font-size: 40px;
-    margin: 40px 0;
+
+
+/* BORDER */
+.border-dashed{
+    border: 1px dashed black;
 }
 
-h3{
-    font-size: 25px;
+.border{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    
 }
 
-ul li{
-    list-style-type: none;
-    display: flex;
-    padding: 20px;
+.border-bottom{
+    border-bottom: 1px solid black
 }
 
-ul{
-    display: flex;
-    align-items: center;
+.border-bottom-light{
+    border-bottom: 1px solid rgba(0, 0, 0,0.2);
 }
 
-li a{
-    text-decoration: none;
-    color: black;
 
-}
-
-p{
-    line-height: 22px;
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.7);
-}
+/* BUTTONS */
 
 .btn{
     display: inline-block;
     padding: 10px 15px;
+    text-decoration: none;
 }
 
 .btn-small{
@@ -179,13 +164,6 @@ p{
 .btn-blue{
     background-color: #0061FF;
     color: white;
-}
-
-
-.mini-header{
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
 }
 
 .button-blue{
@@ -214,16 +192,52 @@ p{
     line-height: 50px;
 }
 
+/* UTILITIES */
+.opacity{
+    opacity: 0.5;
+}
+
+.flex{
+    display: flex;
+}
+
+img{
+    display: block;
+    max-width: 100% ;
+}
+
+h1.title{
+    font-size: 75px;
+    font-weight: 800;
+    margin-bottom:60px ;
+}
+
+h2{
+    font-size: 40px;
+    margin: 40px 0;
+}
+
+h3{
+    font-size: 25px;
+}
+
+
+p{
+    line-height: 22px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.mini-header{
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
 .short-hr{
     width: 20%;
 }
-
-.blue-color{
-   color: #0061FF; 
-}
-
-
-
 
 /* HEADER */
 header{
@@ -235,11 +249,30 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
    
+}
+
+Header ul li{
+    list-style-type: none;
+    display: flex;
+    padding: 20px;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+}
+
+
+header li a{
+    text-decoration: none;
+    color: black;
+
 }
 
 
@@ -264,6 +297,11 @@ header{
 .jumbo-large-col{
     flex-basis: 70%;
     height: 500px;
+}
+
+.fa-arrow-down{
+    position: relative;
+    top: 30px;
 }
 
 /* MAIN */
@@ -312,12 +350,12 @@ header{
     margin: auto;
 }
 
-.check{
-    display: flex;
+.fa-check, .fa-user, .fa-folder, .fa-share-nodes {
+    padding-right: 5px;
 }
 
-.fa-check{
-    padding-right: 5px;
+.num-utenti, .spazio-archiviazione, .share, .check{
+    display: flex;
 }
 
 
@@ -444,20 +482,27 @@ header{
 /* FREE TRIAL */
 
 .free-trial{
-    height: 300px;
+    height: 350px;
     margin-bottom: 150px;
 }
 
 
 .left-col-free-trial{
     flex-basis: 50%;
-    padding-top: 80px;
+    display: flex;
+    align-self: center;
 }
 
 .right-col-free-trial{
-    padding: 120px;
-    flex-basis: 30%;
-   
+    align-self: center;
+    flex-basis: 50%;
+
+}
+
+.trial{
+    position: relative;
+    bottom: 10px;
+    left: 200px;
 }
 
 /* Questions */
@@ -473,4 +518,49 @@ header{
 .question{
     display: flex;
     align-content: center;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    height: 550px;
+    color: white;
+}
+
+footer li {
+    list-style-type: none;
+    
+}
+
+footer ul{
+    padding-top: 100px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container{
+    display: flex;
+    height: 100%;
+    gap: 30px;
+    
+}
+
+.footer-col{
+    flex-basis: 20%;
+
+    padding-bottom: 30px;
+}
+
+footer .main-title{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.footer-bottom{
+    color: grey
 }
